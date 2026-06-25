@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NOVA — Commerce Redefined</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="nova-styles.css"/>
+</head>
+<body>
+
+<!-- ── Custom Cursor ───────────────────────────────── -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- ── Toast Notification ──────────────────────────── -->
+<div id="toast">
+  <span style="color:var(--accent);margin-right:8px">✦</span>
+  <span id="toast-msg">Added to cart</span>
+</div>
+
+<!-- ── Cart Overlay ────────────────────────────────── -->
+<div id="cart-overlay" onclick="closeCart()"></div>
+
+<!-- ── Cart Drawer ─────────────────────────────────── -->
+<div id="cart-drawer">
+  <div class="cart-head">
+    <h3>Your Cart</h3>
+    <button class="cart-close" onclick="closeCart()">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items">
+    <div class="cart-empty">
+      <div class="empty-icon">◯</div>
+      <p>Your cart is empty</p>
+    </div>
+  </div>
+  <div class="cart-foot">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <span id="cart-subtotal">₦0</span>
+    </div>
+    <div class="cart-total">
+      <span>Total</span>
+      <span class="cart-total-amount" id="cart-total">₦0</span>
+    </div>
+    <button class="btn-checkout" onclick="handleCheckout()">Proceed to Checkout →</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-logo">NO<span>V</span>A</div>
+  <div class="nav-links">
+    <a href="#products" class="active">Shop</a>
+    <a href="#categories">Collections</a>
+    <a href="#featured">Featured</a>
+    <a href="#newsletter">About</a>
+  </div>
+  <div class="nav-actions">
+    <button class="nav-icon" onclick="showToast('Search coming soon')">⌕</button>
+    <button class="nav-icon" onclick="showToast('Account coming soon')">⊙</button>
+    <button class="nav-icon" onclick="openCart()" style="position:relative">
+      ◻
+      <span class="cart-badge" id="cart-badge">0</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════ -->
+<section id="hero">
+
+  <!-- Full-bleed background photo -->
+  <div class="hero-bg-img">
+    <img
+      src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1800&q=80"
+      alt="Nova Commerce hero"
+    />
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid"></div>
+
+  <!-- Left: headline & CTAs -->
+  <div class="hero-content">
+    <div class="hero-tag">New Collection 2026</div>
+    <h1 class="hero-title">
+      Elevate<br/>
+      Your <em>World.</em>
+    </h1>
+    <p class="hero-desc">
+      400+ curated products in Nigerian Naira — no forex, no surprises.
+      From watches to wellness, designed for the discerning few.
+    </p>
+    <div class="hero-ctas">
+      <a href="#products" class="btn-primary">Explore Collection →</a>
+      <a href="#featured"  class="btn-ghost">View Lookbook</a>
+    </div>
+  </div>
+
+  <!-- Right: product photo showcase -->
+  <div class="hero-visual">
+    <div class="hero-showcase">
+      <!-- tall card -->
+      <div class="hsc">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80" alt="Watch"/>
+        <div class="hsc-label">
+          Submariner
+          <div class="hsc-price">₦7,927,600</div>
+        </div>
+      </div>
+      <!-- two small cards -->
+      <div class="hsc">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80" alt="Sneaker"/>
+        <div class="hsc-label">
+          Air Jordan 1
+          <div class="hsc-price">₦176,323</div>
+        </div>
+      </div>
+      <div class="hsc">
+        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&q=80" alt="Bag"/>
+        <div class="hsc-label">
+          Neverfull MM
+          <div class="hsc-price">₦1,435,350</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating stat cards -->
+    <div class="floating-card">
+      <div class="fc-label">Products</div>
+      <div class="fc-val">400+</div>
+      <div class="fc-trend">↑ 38 new this week</div>
+    </div>
+    <div class="floating-card">
+      <div class="fc-label">Satisfaction</div>
+      <div class="fc-val">98%</div>
+      <div class="fc-trend">★ 4.9 avg rating</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- ── Ticker ──────────────────────────────────────── -->
+<div id="ticker">
+  <div class="ticker-track" id="ticker-track"></div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     STATS
+══════════════════════════════════════════════════ -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <div class="stat-num">400<span style="font-size:.5em;color:var(--accent)">+</span></div>
+      <div class="stat-label">Premium Products</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="stat-num">20</div>
+      <div class="stat-label">Collections</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="stat-num">142<span style="font-size:.5em;color:var(--accent)">k</span></div>
+      <div class="stat-label">Happy Customers</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <div class="stat-num">48<span style="font-size:.5em;color:var(--accent)">h</span></div>
+      <div class="stat-label">Express Delivery</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     PRODUCTS
+══════════════════════════════════════════════════ -->
+<section id="products">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-tag">— 400+ Curated Products</div>
+      <h2 class="section-title">Shop <em>All</em></h2>
+    </div>
+    <span id="product-count" style="font-size:12px;color:var(--muted);letter-spacing:.1em"></span>
+  </div>
+
+  <!-- Filter buttons (filled by JS) -->
+  <div class="filter-bar reveal" id="filter-bar"></div>
+
+  <!-- Product cards (filled by JS) -->
+  <div class="products-grid" id="products-grid"></div>
+
+  <!-- Pagination (filled by JS) -->
+  <div class="pagination" id="pagination"></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     FEATURED BANNER
+══════════════════════════════════════════════════ -->
+<section id="featured">
+
+  <!-- Background photo -->
+  <div class="featured-bg-img">
+    <img
+      src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1400&q=80"
+      alt="Featured product background"
+    />
+  </div>
+  <div class="featured-overlay"></div>
+
+  <div class="featured-content reveal">
+    <div class="featured-label">Limited Edition</div>
+    <h2 class="featured-title">
+      The Nova<br/>
+      <em>Signature</em><br/>
+      Collection
+    </h2>
+    <p class="featured-desc">
+      Handcrafted with obsessive attention to detail.
+      Only 500 pieces worldwide. Each carries a unique serial number
+      and certificate of authenticity.
+    </p>
+    <div class="featured-price">
+      ₦1,775,100 <small>/ piece</small>
+    </div>
+    <button
+      class="btn-primary"
+      onclick="addToCart({id:9999,name:'Nova Signature Timepiece',brand:'Nova Atelier',price:1775100,img:'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80',cat:'watches'})">
+      Add to Cart — Limited Stock
+    </button>
+  </div>
+
+  <!-- Right: circular product photo -->
+  <div class="featured-visual">
+    <div class="featured-product-img">
+      <img
+        src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600&q=80"
+        alt="Nova Signature Watch"
+      />
+    </div>
+  </div>
+
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     CATEGORIES (20)
+══════════════════════════════════════════════════ -->
+<section id="categories">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-tag">— 20 Collections</div>
+      <h2 class="section-title">Shop by <em>Category</em></h2>
+    </div>
+  </div>
+  <!-- Category cards filled by JS -->
+  <div class="categories-grid" id="categories-grid"></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     NEWSLETTER
+══════════════════════════════════════════════════ -->
+<section id="newsletter">
+  <div class="newsletter-inner reveal">
+    <div class="newsletter-icon">◎</div>
+    <h2 class="newsletter-title">Join the Inner Circle</h2>
+    <p class="newsletter-sub">
+      Early access to new drops, exclusive offers, and curated
+      inspiration — delivered to your inbox.
+    </p>
+    <div class="newsletter-form">
+      <input
+        type="email"
+        class="newsletter-input"
+        id="newsletter-email"
+        placeholder="your@email.com"
+      />
+      <button class="newsletter-submit" onclick="handleNewsletter()">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">NO<span>V</span>A</div>
+      <p class="footer-desc">
+        Commerce refined. Every product is chosen for its quality, craft,
+        and design philosophy. All prices in Nigerian Naira — no hidden charges.
+      </p>
+      <div class="footer-socials">
+        <a href="#" class="social-link">𝕏</a>
+        <a href="#" class="social-link">◉</a>
+        <a href="#" class="social-link">⊞</a>
+        <a href="#" class="social-link">▷</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Gift Cards</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Shipping Info</a></li>
+        <li><a href="#">Size Guide</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Nova Commerce Nigeria. All rights reserved. Prices in ₦ NGN.</span>
+    <div class="footer-payments">
+      <span style="font-size:11px;color:var(--muted);margin-right:8px">Secure payments</span>
+      <span class="payment-badge">PAYSTACK</span>
+      <span class="payment-badge">FLUTTERWAVE</span>
+      <span class="payment-badge">VISA</span>
+      <span class="payment-badge">MASTERCARD</span>
+      <span class="payment-badge">USSD</span>
+    </div>
+  </div>
+</footer>
+
+<script src="nova-script.js"></script>
+</body>
+</html>
