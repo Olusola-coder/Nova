@@ -1,52 +1,47 @@
-Use the template below to create a resume for me.
+Hi there, I'm Olusola Olufunmi
 
-Frontend Developer | Final-Year Engineering Student
-
-I'm a passionate Frontend Developer and a Final-Year Materials and Metallurgical Engineering student at the Federal University of Technology, Minna (FUT Minna), Nigeria.
-I started my web development journey in 2025 and have since been building responsive, user-friendly, and modern web applications using industry-standard technologies.
-🌱 Currently improving my React and JavaScript skills
-💼 Open to internships, freelance projects, collaborations, and entry-level frontend opportunities
-🚀 Passionate about creating beautiful and functional user experiences
-🚀 About Me
-
-* 🎓 Final-Year Student at Federal University of Technology, Minna
-* 📚 Studying Materials and Metallurgical Engineering
-* 💻 Frontend Developer
-* 🌱 Started learning software development in 2025
-* 🔍 Actively seeking opportunities to grow and contribute
-* ⚡ Interested in Web Development, UI/UX, and Modern Frontend Technologies
-🛠️ Tech Stack
-
-📂 Featured Projects
-🛒 ShopRin
-Modern eCommerce frontend website with responsive design and seamless shopping experience.
-🔗 https://graceful-lolly-58d351.netlify.app/
-💼 Positivus
-A modern digital marketing agency website focused on clean UI and responsive layouts.
-🔗 https://silly-dango-9fe609.netlify.app/
-🏪 NOVA Commerce
-A complete marketplace frontend project built with modern web technologies.
-🔗 https://vermillion-parfait-1aa41a.netlify.app/
-📊 Area Analytics
-Analytics dashboard interface featuring modern layouts and data visualization.
-🔗 https://lively-mochi-4473e7.netlify.app/
-🎓 FUT Minna Portal
-A university portal interface designed to simplify student interactions and academic management.
-🔗 https://monumental-seahorse-b5f5b8.netlify.app/
-📈 GitHub Statistics
+Frontend Developer based in Lagos, Nigeria — I build clean, responsive web experiences with a focus on usability, performance, and thoughtful design. From e-commerce platforms to institutional portals, I turn ideas into polished, functional interfaces.
 
 
+**Tech Stack**
 
-🌐 Connect With Me
+HTML · CSS · JavaScript · Node.js
 
-💡 Developer Quote
-"Consistency beats talent when talent doesn't work consistently."
-🎯 2026 Goals
 
-* Build more real-world frontend projects
-* Contribute to open-source projects
-* Deepen my React ecosystem knowledge
-* Learn advanced frontend architecture
-* Secure a frontend development role
-Thanks for visiting my profile! 🚀
-If you like my projects, feel free to star my repositories and connect with me.
+**Featured Projects**
+
+NOVA Commerce
+A premium e-commerce platform with 400+ curated products, full cart functionality, and seamless NGN pricing.
+Live: https://vermillion-parfait-1aa41a.netlify.app/
+
+ShopRin
+Nigeria's multi-vendor marketplace — phones, fashion, electronics and more, built for 200K+ buyers.
+Live: https://graceful-lolly-58d351.netlify.app/
+
+Positivus
+A modern digital marketing agency landing page with services, case studies, and team sections.
+Live: https://silly-dango-9fe609.netlify.app/
+
+Area Analytics
+A SaaS landing page for a regional analytics platform — clean UI with competitive specs and feature breakdowns.
+Live: https://lively-mochi-4473e7.netlify.app/
+
+FUT Minna Portal
+A student academic portal for Nigeria's Federal University of Technology — course registration, results and fees.
+Live: https://monumental-seahorse-b5f5b8.netlify.app/
+
+
+**A Bit More About Me**
+
+- Currently building NOVA Commerce — a premium shopping experience designed for Nigerian consumers
+- Passionate about writing clean, maintainable code and crafting interfaces that actually feel good to use
+- Lagos-based, always building — from SaaS dashboards to full marketplace platforms
+- Open to frontend roles and freelance collaborations
+
+
+**Get in Touch**
+
+Feel free to reach out if you'd like to collaborate, hire, or just connect!
+
+
+Built with HTML, CSS, JavaScript and Node.js · Made in Lagos, Nigeria
