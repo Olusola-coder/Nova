@@ -1,47 +1,108 @@
-Hi there, I'm Olusola Olufunmi
+# <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"> Hi, I'm Olusola Olufunmi
 
-Frontend Developer based in Lagos, Nigeria — I build clean, responsive web experiences with a focus on usability, performance, and thoughtful design. From e-commerce platforms to institutional portals, I turn ideas into polished, functional interfaces.
+<p align="center">
 
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=24&duration=3000&pause=1200&color=4FC3F7&center=true&vCenter=true&width=650&lines=Frontend+Developer;Engineering+Student;React+Enthusiast;Building+Modern+Web+Experiences" />
 
-**Tech Stack**
+</p>
 
-HTML · CSS · JavaScript · Node.js
+### Frontend Developer • Final-Year Engineering Student
 
+I'm a passionate **Frontend Developer** and Final-Year **Materials & Metallurgical Engineering** student at the **Federal University of Technology, Minna (FUT Minna), Nigeria**.
 
-**Featured Projects**
+I enjoy building responsive, accessible and modern web applications that provide great user experiences.
 
-NOVA Commerce
-A premium e-commerce platform with 400+ curated products, full cart functionality, and seamless NGN pricing.
-Live: https://vermillion-parfait-1aa41a.netlify.app/
+- 🌱 Currently learning **React, JavaScript & Frontend Architecture**
+- 💼 Open to internships, freelance projects and frontend roles
+- 🚀 Passionate about UI/UX and clean code
+- 📫 Reach me: **olusolaolufunmi20@gmail.com**
 
-ShopRin
-Nigeria's multi-vendor marketplace — phones, fashion, electronics and more, built for 200K+ buyers.
-Live: https://graceful-lolly-58d351.netlify.app/
+---
 
-Positivus
-A modern digital marketing agency landing page with services, case studies, and team sections.
-Live: https://silly-dango-9fe609.netlify.app/
+# 💻 Tech Stack
 
-Area Analytics
-A SaaS landing page for a regional analytics platform — clean UI with competitive specs and feature breakdowns.
-Live: https://lively-mochi-4473e7.netlify.app/
+<p align="center">
 
-FUT Minna Portal
-A student academic portal for Nigeria's Federal University of Technology — course registration, results and fees.
-Live: https://monumental-seahorse-b5f5b8.netlify.app/
+<img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,bootstrap,nodejs,git,github,vscode,figma&perline=6"/>
 
+</p>
 
-**A Bit More About Me**
+---
 
-- Currently building NOVA Commerce — a premium shopping experience designed for Nigerian consumers
-- Passionate about writing clean, maintainable code and crafting interfaces that actually feel good to use
-- Lagos-based, always building — from SaaS dashboards to full marketplace platforms
-- Open to frontend roles and freelance collaborations
+# 🚀 Featured Projects
 
+| Project | Description | Live Demo |
+|---------|-------------|----------|
+| **🛒 ShopRin** | Modern eCommerce frontend | https://graceful-lolly-58d351.netlify.app/ |
+| **💼 Positivus** | Digital Marketing Agency UI | https://silly-dango-9fe609.netlify.app/ |
+| **🏪 NOVA Commerce** | Marketplace Frontend | https://vermillion-parfait-1aa41a.netlify.app/ |
+| **📊 Area Analytics** | Analytics Dashboard | https://lively-mochi-4473e7.netlify.app/ |
+| **🎓 FUT Minna Portal** | Student Portal UI | https://monumental-seahorse-b5f5b8.netlify.app/ |
 
-**Get in Touch**
+---
 
-Feel free to reach out if you'd like to collaborate, hire, or just connect!
+# 🏆 GitHub Trophies
 
+<p align="center">
 
-Built with HTML, CSS, JavaScript and Node.js · Made in Lagos, Nigeria
+<img src="https://github-profile-trophy.vercel.app/?username=Olusola-coder&theme=tokyonight&no-frame=true&column=4&margin-w=15&margin-h=15"/>
+
+</p>
+
+---
+
+# 📊 GitHub Statistics
+
+<p align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Olusola-coder&show_icons=true&theme=tokyonight&hide_border=true"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Olusola-coder&layout=compact&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+---
+
+# 🌐 Connect With Me
+
+<p align="center">
+
+<a href="mailto:olusolaolufunmi20@gmail.com">
+<img src="https://skillicons.dev/icons?i=gmail"/>
+</a>
+
+<a href="https://www.linkedin.com/in/olusola-olufunmi-805933378">
+<img src="https://skillicons.dev/icons?i=linkedin"/>
+</a>
+
+<a href="https://x.com/InixAlos">
+<img src="https://skillicons.dev/icons?i=twitter"/>
+</a>
+
+</p>
+
+---
+
+# 🎯 2026 Goals
+
+- 🚀 Build production-ready React applications
+- 🌍 Contribute to Open Source
+- ⚛️ Master the React ecosystem
+- 💼 Secure a Frontend Developer role
+- 📚 Continue learning modern web technologies
+
+---
+
+# 💬 Favorite Quote
+
+> *"Consistency beats talent when talent doesn't work consistently."*
+
+---
+
+<p align="center">
+
+### ⭐ Thanks for visiting!
+
+If you enjoy my projects, consider **starring** a repository or connecting with me.
+
+</p>
